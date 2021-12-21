@@ -1,7 +1,6 @@
 # console app to get temperature of a city.
 # By Yara ElSakka.
 # 20.12.21
-# https://www.pythonforengineers.in/2021/08/python-script-that-takes-city-name-and.html
 # https://planningclasses.notion.site/Class-20-12-2021-b520ff3d833d4db383bd9b311d35be90
 # https://codefile.io/f/4BfjySsT3Ai05dygyUyh
 
@@ -22,3 +21,4 @@ cityName = input("City Temperature: ")
 cityName = cityName + " weather now is" # weather will be replaced with the actual weather in Celsius
 print(cityName)
 getWeatherMethod(cityName)
+# end of code 
