@@ -21,4 +21,5 @@ cityName = input("City Temperature: ")
 cityName = cityName + " weather now is" # weather will be replaced with the actual weather in Celsius
 print(cityName)
 getWeatherMethod(cityName)
-# end of code 
+# end of code
+# yara elsakka
