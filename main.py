@@ -17,22 +17,22 @@ def getWeatherMethod(cityTemp):
     soup = BeautifulSoup(tempDB.text, 'html.parser')
 
     # API to get the weather temparature:
-    weatherID = soup.select('#wob_tm')[0].get_text()
+    weatherID = soup.select('#wob_tm')[0].get_text().strip()
     print(weatherID+" C")
 
     print("\n..working out other information..\n")
     # additional information as per 27.12.21 updates:
 
     # API to get the location information:
-    location = soup.select('#wob_loc')[0].getText()
+    location = soup.select('#wob_loc')[0].getText().strip()
     print(f"Location information: {location}\n")
 
     # API to get the time information:
-    time = soup.select('#wob_dts')[0].getText()
+    time = soup.select('#wob_dts')[0].getText().strip()
     print(f"Time information: {time}\n")
 
     # API to get other info:
-    info = soup.select('#wob_dc')[0].getText()
+    info = soup.select('#wob_dc')[0].getText().strip()
     print(f"Other information: {info}\n")
 
     #return weatherID // "no need for return command as per the teacher"
