@@ -35,6 +35,15 @@ def getWeatherMethod(cityTemp):
     info = soup.select('#wob_dc')[0].getText().strip()
     print(f"Other information: {info}\n")
 
+    precipitation = soup.select_one('#wob_pp').text
+    print(f"precipitation: {precipitation}\n")
+
+    humidity = soup.select_one('#wob_hm').text
+    print(f"humidity: {humidity}\n")
+
+    wind = soup.select_one('#wob_ws').text
+    print(f"wind: {wind}\n")
+
     #return weatherID // "no need for return command as per the teacher"
 
 cityName = input("The city temperature: ")
